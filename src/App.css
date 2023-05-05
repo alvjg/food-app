@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+html {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
+    background: -webkit-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
+    background: -moz-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1)); */
+    background: #313131;
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    /* background: url('https://static.vecteezy.com/system/resources/previews/006/504/485/original/abstract-wallpaper-using-blue-color-scheme-with-blob-shape-and-using-4k-resolution-suitable-for-all-used-free-photo.jpg'); */
+    /* background-color: #282c34; */
+    background: transparent;
+    color: white;
+    padding: 40px;
+    font-family: Arial;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), url(Montserrat-Medium.ttf) format('ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#name {
+    text-align: center;
+    font-family: Montserrat;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Navigation Bar */
+div.navigation-bar {
+    /*  */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
