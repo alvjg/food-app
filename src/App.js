@@ -2,6 +2,7 @@ const App = (props) => {
 
   return (
     <>
+      <div class="starter" >Hello World.</div>
       <div class="navigation-bar">
 
       </div>
