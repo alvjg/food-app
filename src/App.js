@@ -2,6 +2,9 @@ const App = (props) => {
 
   return (
     <>
+      <div>
+        What's good, it's Alvin time
+      </div>
       <div class="starter" >Hello World.</div>
       <div class="navigation-bar">
 
