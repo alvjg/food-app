@@ -1,28 +1,19 @@
 
-import './App.css';
-const App = (props) => {
 
-  return (
+import ReactDOM from "react-dom/client";
+
+const New = (props) =>{
+  return(
     <>
-      <div>
+    <div>
         
-      </div>
-      <div class="starter" >Hello World.</div>
-      <div class="navigation-bar">
-
-      </div>
-
-      <div class="login-form">
-        <input type="text" placeholder="Enter Username" required></input>
-        <input style={{marginTop:"5%"}}type="text" placeholder="Enter Password" required></input>
-
-        <button type="submit">Login</button>
-
-
-      </div>
+        </div>
+        <div class="starter" >Hello World.</div>
+        <div class="navigation-bar">
+  
+        </div>
     </>
-
   )
 }
 
-export default App
+
