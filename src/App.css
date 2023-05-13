@@ -26,6 +26,30 @@ body {
     text-align: center;
     font-family: Montserrat;
 }
+div.login-form{
+    position: absolute;
+    align-items: center;
+    background-color: grey;
+    height: 40%;
+    width:30%;
+    left:40%;
+    top:30%
+}
+input {
+    position: relative;
+    top: 35%;
+    width: 50%;
+    height: 10%;
+    left: 25%
+    
+}
+button{
+    position: relative;
+    top:50%;
+    margin-top:5%;
+    width: 30%;
+    left: -15%;
+}
 
 /* Navigation Bar */
 div.navigation-bar {

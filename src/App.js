@@ -5,7 +5,7 @@ const App = (props) => {
   return (
     <>
       <div>
-        What's good, it's Alvin time
+        
       </div>
       <div class="starter" >Hello World.</div>
       <div class="navigation-bar">
@@ -14,7 +14,7 @@ const App = (props) => {
 
       <div class="login-form">
         <input type="text" placeholder="Enter Username" required></input>
-        <input type="text" placeholder="Enter Password" required></input>
+        <input style={{marginTop:"5%"}}type="text" placeholder="Enter Password" required></input>
 
         <button type="submit">Login</button>
 
