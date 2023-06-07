@@ -9,19 +9,24 @@ const App = (props) => {
       <div>
         
       </div>
-      <div class="starter" >Hello World.</div>
+      
       <div class="navigation-bar">
 
       </div>
 
       <div class="login-form">
         <input type="text" placeholder="Enter Username" required></input>
-        <input style={{marginTop:"5%"}}type="text" placeholder="Enter Passweord" required></input>
+        <input style={{marginTop:"5%"}}type="text" placeholder="Enter Password" required></input>
 
         <button onClick={New} type="submit">Login</button>
 
 
       </div>
+      
+      <ul>
+       
+        <li><a id = "setting" href="#about">Settings</a></li>
+      </ul>
     </>
 
   )

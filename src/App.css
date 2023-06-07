@@ -32,7 +32,7 @@ div.login-form{
     background-color: grey;
     height: 40%;
     width:30%;
-    left:40%;
+    left:35%;
     top:30%
 }
 input {
@@ -50,7 +50,33 @@ button{
     width: 30%;
     left: -15%;
 }
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
+  
+li a {
+    
+    display: block;
+    color: white;
+    text-align: center;
+    
+    
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+#setting{
+    position: relative;
+    font-size: 20px;
+    left: 10px;
+}
 /* Navigation Bar */
 div.navigation-bar {
     /*  */
