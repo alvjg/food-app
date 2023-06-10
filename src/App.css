@@ -4,7 +4,7 @@ html {
     /* background: linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -webkit-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -moz-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1)); */
-    background: #313131;
+    background: #A1A1A1;
     background-repeat: no-repeat;
 }
 
@@ -26,31 +26,35 @@ body {
     text-align: center;
     font-family: Montserrat;
 }
-div.login-form{
+
+div.login-form {
     position: absolute;
     align-items: center;
     background-color: grey;
     height: 40%;
-    width:30%;
-    left:35%;
-    top:30%
+    width: 30%;
+    left: 35%;
+    top: 30%
 }
+
+
 input {
     position: relative;
     top: 35%;
     width: 50%;
     height: 10%;
     left: 25%
-    
 }
-button{
+
+button {
     position: relative;
-    top:50%;
-    margin-top:5%;
+    top: 50%;
+    margin-top: 5%;
     width: 30%;
     left: -15%;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -58,27 +62,42 @@ ul{
     background-color: #333;
 }
 
-  
-li a {
-    
+
+/* li a {
+
     display: block;
     color: white;
     text-align: center;
-    
-    
+
+
     text-decoration: none;
 }
-  
+
 li a:hover {
     background-color: #111;
-}
-#setting{
-    position: relative;
-    font-size: 20px;
-    left: 10px;
-}
-/* Navigation Bar */
-div.navigation-bar {
-    /*  */
+} */
 
+
+/* Navigation Bar */
+nav {
+    text-align: end;
+    background-color: #25a9f5;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+nav a:hover {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+#navbar-brand {
+    text-align: start;
+    font-size: 30px;
+    color: gray;
 }
