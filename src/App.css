@@ -1,20 +1,14 @@
-html {
+html,
+body {
     height: 100%;
     width: 100%;
     /* background: linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -webkit-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -moz-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1)); */
-    background: #A1A1A1;
+    background: white;
     background-repeat: no-repeat;
-}
-
-body {
-    /* background: url('https://static.vecteezy.com/system/resources/previews/006/504/485/original/abstract-wallpaper-using-blue-color-scheme-with-blob-shape-and-using-4k-resolution-suitable-for-all-used-free-photo.jpg'); */
-    /* background-color: #282c34; */
-    background: transparent;
-    color: white;
-    padding: 40px;
-    font-family: Arial;
+    margin: auto;
+    /* padding: 10px; */
 }
 
 @font-face {
@@ -22,82 +16,74 @@ body {
     src: local('Montserrat'), url(Montserrat-Medium.ttf) format('ttf');
 }
 
-#name {
-    text-align: center;
-    font-family: Montserrat;
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-div.login-form {
-    position: absolute;
+/* header {
+    width: 100vw;
+} */
+
+
+/* Login form */
+.login-form {
     align-items: center;
     background-color: grey;
-    height: 40%;
-    width: 30%;
-    left: 35%;
-    top: 30%
+    height: 50%;
+    width: 20%;
 }
 
 
 input {
-    position: relative;
-    top: 35%;
-    width: 50%;
-    height: 10%;
-    left: 25%
+    display: inline-block;
+    padding: 10px;
+
 }
-
-button {
-    position: relative;
-    top: 50%;
-    margin-top: 5%;
-    width: 30%;
-    left: -15%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-
-/* li a {
-
-    display: block;
-    color: white;
-    text-align: center;
-
-
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-} */
-
 
 /* Navigation Bar */
-nav {
-    text-align: end;
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    font-family: Montserrat;
     background-color: #25a9f5;
+    padding: 15px;
 }
 
-nav a {
+.navbar .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: end;
+    margin: auto 2% auto 2%;
     padding: 10px;
     font-size: 25px;
     color: black;
 }
 
-nav a:hover {
+.navbar a:hover {
+    text-decoration: none;
     padding: 10px;
     font-size: 25px;
     color: white;
 }
 
-#navbar-brand {
+.navbar a.active {
+    padding: 5px;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+}
+
+.navbar .logo {
     text-align: start;
     font-size: 30px;
-    color: gray;
+    color: palevioletred;
 }
