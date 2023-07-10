@@ -7,7 +7,7 @@ export default function NavBar() {
                 <div class="container">
                     {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
                     <div class="logo">
-                        <NavLink to="/MainPage"> Foodie Finder</NavLink>
+                        <NavLink to="/Home"> Foodie Finder</NavLink>
                     </div>
                     <NavLink to="/MainPage">Restaurants</NavLink>
                     <NavLink to="/Settings">Settings</NavLink>
