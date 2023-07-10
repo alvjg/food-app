@@ -4,7 +4,6 @@ export default function RootLayout() {
     return (
         <>
             <div className="root-layout" class="flex-container">
-                {/* when screen is "lg" or smaller this class will be active*/}
                 <nav class="navbar">
                     <div class="container">
                         {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
