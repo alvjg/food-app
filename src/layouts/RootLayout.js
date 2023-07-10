@@ -7,12 +7,12 @@ export default function RootLayout() {
                 <nav class="navbar">
                     <div class="container">
                         {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
-                        <Navbar/>
-                        <div class="logo">
+                        <Navbar />
+                        {/* <div class="logo">
                             <NavLink to="/">Foodie Finder</NavLink>
                         </div>
                         <NavLink to="/MainPage">Restaurants</NavLink>
-                        <NavLink to="/Settings">Settings</NavLink>
+                        <NavLink to="/Settings">Settings</NavLink> */}
                     </div>
                 </nav>
 

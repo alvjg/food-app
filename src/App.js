@@ -1,4 +1,4 @@
-import { createBrowserRouter, Route, Link, NavLink, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import Home from './components/Home'
 import Settings from './components/Settings'
 import RootLayout from './layouts/RootLayout'
@@ -16,33 +16,19 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
+  return (
     <>
 
-      <div class = "flex-container">
-        <div class="navigation-bar">
-
-        </div>
-
-        <div class="login-form">
-          <input type="text" placeholder="Enter Username" required></input>
-          <input style={{marginTop:"5%"}}type="text" placeholder="Enter Password" required></input>
-
-          <button >Login</button>
-
-
-        </div>
-
-      <ul>
- 
-        <li><a id = "setting" href="#about">Settings</a></li>
-      </ul>
+      <div class="flex-container">
       </div>
-      
-      
+
+
 
       <RouterProvider router={router} />
 
     </>
+  )
+
 }
 
 export default App;

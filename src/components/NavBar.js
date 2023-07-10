@@ -1,18 +1,18 @@
 import { NavLink } from "react-router-dom"
 import './NavBar.css'
- export default function NavBar() {
+export default function NavBar() {
     return (
         <>
-                 <nav class="navbar">
-                    <div class="container">
-                        {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
-                        <div class="logo">
-                            FoodieFind
-                        </div>
-                        <NavLink to="/MainPage">Restaurants</NavLink>
-                        <NavLink to="/Settings">Settings</NavLink>
+            <nav class="navbar">
+                <div class="container">
+                    {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
+                    <div class="logo">
+                        <NavLink to="/MainPage"> Foodie Finder</NavLink>
                     </div>
-                </nav>
+                    <NavLink to="/MainPage">Restaurants</NavLink>
+                    <NavLink to="/Settings">Settings</NavLink>
+                </div>
+            </nav>
 
         </>)
 }
