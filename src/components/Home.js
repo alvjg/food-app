@@ -1,4 +1,4 @@
-export default function Home() {
+const Home = () => {
     return (
         <>
             <div class="login-form">
@@ -12,3 +12,5 @@ export default function Home() {
 
         </>)
 }
+
+export default Home;

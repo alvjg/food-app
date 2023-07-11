@@ -1,7 +1,7 @@
 
 .navbar {
-    display: flex;
-    width: 100vw;
+    position: relative;
+    width: 100%;
     font-family: Montserrat;
     background-color: #25a9f5;
     padding: 15px;

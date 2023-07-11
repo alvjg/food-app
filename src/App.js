@@ -16,12 +16,13 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
+  document.body.className = 'container';
   return (
+    
     <>
-
-      <div class="container">
-        <RouterProvider router={router} />
-      </div>
+      
+      <RouterProvider router={router} />
+      
 
 
 
