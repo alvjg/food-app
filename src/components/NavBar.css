@@ -1,0 +1,38 @@
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    font-family: Montserrat;
+    background-color: #25a9f5;
+    padding: 15px;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    text-align: end;
+    margin: auto 2% auto 2%;
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar a.active {
+    padding: 5px;
+    text-decoration: none;
+    background-color: darkgoldenrod;
+}
+
+.navbar .logo {
+    text-align: start;
+    font-size: 30px;
+    color: palevioletred;
+}

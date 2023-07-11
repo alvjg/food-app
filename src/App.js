@@ -19,12 +19,13 @@ const App = () => {
   return (
     <>
 
-      <div class="flex-container">
+      <div class="container">
+        <RouterProvider router={router} />
       </div>
 
 
 
-      <RouterProvider router={router} />
+      
 
     </>
   )
