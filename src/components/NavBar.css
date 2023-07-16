@@ -1,13 +1,11 @@
-
 .navbar {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    height: 10%;
     font-family: Montserrat;
     background-color: #25a9f5;
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 }
-
-
 
 .navbar a {
     text-decoration: none;
