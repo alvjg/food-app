@@ -10,8 +10,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     //parent route, RootLayout is a default template for pages
     <Route path="/" element={<RootLayout />}>
-      //provides a page for root
-      //add new routes to components here
+      {/* provides a page for root */}
+      {/* add new routes to components here */}
       <Route path="/" element={<Home />}></Route>
       <Route path="/Restaurants" element={<Restaurants />}></Route>
       <Route path="/Settings" element={<Settings />}></Route>

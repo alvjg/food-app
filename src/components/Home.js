@@ -1,23 +1,28 @@
-import blank from './blank.js'
 import { useState } from 'react'
+import Blank from './blank.js'
 
 const Home = () => {
 
-    const renderNewPage = () => {
+    //useState always returns two values: a function and the current state (depends on useState parameter)
+    const [clicked, isClicked] = useState(false);
 
-
+    const handleLogin = () => {
+        isClicked(true);
     }
+
     return (
         <>
-            <div class="login-form main">
-                <input type="text" placeholder="Enter Username" required></input>
-                <input style={blank} type="text" placeholder="Enter Password" required></input>
+            {clicked ?
 
-                <button type="submit" onCLick={this.displayNewPage}>Login</button>
+                (<Blank />)
 
-
-            </div>
-
+                :
+                (<div class="login-form">
+                    <input type="text" placeholder="Enter Username" required></input>
+                    <input type="text" placeholder="Enter Password" required></input>
+                    <button type="submit" onCLick={handleLogin}>Login</button>
+                </div>)
+            }
         </>)
 }
 
