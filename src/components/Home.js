@@ -17,10 +17,12 @@ const Home = () => {
                 (<Blank />)
 
                 :
-                (<div class="login-form">
-                    <input type="text" placeholder="Enter Username" required></input>
-                    <input type="text" placeholder="Enter Password" required></input>
-                    <button type="submit" onCLick={handleLogin}>Login</button>
+                (<div class="main">
+                    <div class="login-form">
+                        <input type="text" placeholder="Enter Username" required></input>
+                        <input type="text" placeholder="Enter Password" required></input>
+                        <button type="submit" onCLick={handleLogin}>Login</button>
+                    </div>
                 </div>)
             }
         </>)
