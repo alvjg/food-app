@@ -5,7 +5,7 @@ const NavBar = () => {
     console.log(document.getElementsByClassName("navbar").parentElement + "hihih");
     return (
         <>
-            <nav class="navbar flex-items">
+            <nav class="navbar">
 
                 {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
                 <div class="logo">

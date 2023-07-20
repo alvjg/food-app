@@ -5,9 +5,9 @@ export default function RootLayout() {
     return (
         <>
             {/* <div class="root-layout flex-items"> */}
-            <Navbar class="flex-items" />
+            <Navbar  />
             {/* </div> */}
-            <main class= "flex-items">
+            <main >
                 {/* renders the component(s) */}
                 <Outlet />
             </main>
