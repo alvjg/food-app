@@ -18,9 +18,10 @@ const Home = () => {
 
                 :
                 (<div class="login-form">
-                    <input type="text" placeholder="Enter Username" required></input>
-                    <input type="text" placeholder="Enter Password" required></input>
-                    <button type="submit" onCLick={handleLogin}>Login</button>
+                    <input class = "info" type="text" placeholder="Enter Username" required></input>
+                    <input class = "info" type="text" placeholder="Enter Password" required></input>
+                    <button class = "login" type="submit" onCLick={handleLogin}>Login</button>
+                    
                 </div>)
             }
         </>)
