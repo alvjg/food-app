@@ -19,7 +19,7 @@
     margin: auto 2% auto 2%;
     padding: 10px;
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 .navbar a:hover {
@@ -33,10 +33,11 @@
     padding: 5px;
     text-decoration: none;
     background-color: darkgoldenrod;
+    
+}
+.setting{
+    display: auto;
+    margin-left: auto;
+    color: red;
 }
 
-.navbar .logo {
-    text-align: start;
-    font-size: 30px;
-    color: palevioletred;
-}

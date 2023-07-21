@@ -9,11 +9,11 @@ const NavBar = () => {
 
                 {/* NavLink has conditional class="active" (only appears when user clicks on the link)*/}
                 <div class="logo">
-                    <NavLink to="/">Foodie Finder</NavLink>
+                    
                 </div>
-                <NavLink to="/Restaurants">Restaurants</NavLink>
-                <NavLink to="/Settings">Settings</NavLink>
-                <NavLink to="/Test">Test</NavLink>
+                <NavLink class = "logo" style={{ }} to="/">Foodie Finder</NavLink>
+                <NavLink class = "setting" to="/Settings">Settings</NavLink>
+                
 
             </nav>
 
