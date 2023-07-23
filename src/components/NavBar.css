@@ -33,11 +33,15 @@
     padding: 5px;
     text-decoration: none;
     background-color: darkgoldenrod;
-    
+
 }
-.setting{
+
+.logo {
+    color: black;
+}
+
+.setting {
     display: auto;
     margin-left: auto;
     color: red;
 }
-

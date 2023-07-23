@@ -1,15 +1,42 @@
+import { Form, redirect } from "react-router-dom"
+
 const Home = () => {
 
     return (
         <>
+            <Form method="post" action="/">
                 <div class="login-form">
-                    <input class = "info" type="text" placeholder="Enter Username" required></input>
-                    <input class = "info" type="text" placeholder="Enter Password" required></input>
-                    <button class = "login" type="submit" onCLick={handleLogin}>Login</button>
-                    
+                    <input class="info" type="text" name="username" placeholder="Enter Username" required></input>
+                    <input class="info" type="text" name="password" placeholder="Enter Password" required></input>
+                    <button class="login" type="submit">Login</button>
+
                 </div>
-            
+            </Form>
+
+
         </>)
+}
+
+
+// function that is used in the action of login
+//request parameter contains all of the form's data
+export const blankAction = async ({ request }) => {
+    console.log(request);
+    // we use await because this is an asychronous method
+    const data = await request.formData()
+
+    //use this data to submit a post request to a database and verify account info
+    const submission = {
+        username: data.get('username'),
+        password: data.get('password')
+    }
+
+    console.log(submission)
+
+    // send post request
+
+    // redirect the user
+    return redirect('/blank')
 }
 
 
