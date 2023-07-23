@@ -1,5 +1,5 @@
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import Home, { blankAction } from './components/Home'
+import Home, { loggedInAction } from './components/Home'
 import Restaurants from './components/Restaurants'
 import Settings from './components/Settings'
 import RootLayout from './layouts/RootLayout'
@@ -8,12 +8,12 @@ import Contact from './components/help/Contact'
 import FAQ from './components/help/FAQ'
 import './App.css'
 import NotFound from './components/NotFound'
-import Blank from './components/blank'
+import LoggedIn from './components/LoggedIn'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     //parent route, RootLayout is a default template for nested pages (in this case, the navbar will be present in all pages)
-    <Route path="/" element={<RootLayout />} action={blankAction}>
+    <Route path="/" element={<RootLayout />} action={loggedInAction}>
       {/* add new routes to components here */}
 
       {/* provides a page for root */}
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
       </Route>
 
 
-      <Route path="/blank" element={<Blank />}></Route>
+      <Route path="/loggedin" element={<LoggedIn />}></Route>
 
       {/* error path for when a directory does not exist */}
       <Route path="*" element={<NotFound />}></Route>
