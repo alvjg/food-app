@@ -6,18 +6,13 @@ const Home = () => {
 
     return (
         <>
-            <Form method="post" action="/">
-                <div class="login-form">
-                    <input class="info" type="text" name="username" placeholder="Enter Username" required></input>
-                    <input class="info" type="text" name="password" placeholder="Enter Password" required></input>
-                    <button class="login" type="submit">Login</button>
-
-                </div>
-
+            <Form class="login-form" method="post" action="/">
+                <input class="info" type="text" name="username" placeholder="Enter Username" required></input>
+                <input class="info" type="text" name="password" placeholder="Enter Password" required></input>
+                <button class="login" type="submit">Login</button>
                 {/* if an action did occur and it is an error, display the error message */}
                 {data && data.error && <p>{data.error}</p>}
             </Form>
-
 
         </>)
 }
