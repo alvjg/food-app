@@ -6,6 +6,7 @@ import RootLayout from './layouts/RootLayout'
 import HelpLayout from './layouts/HelpLayout'
 import Contact from './components/help/Contact'
 import FAQ from './components/help/FAQ'
+import MapView from './components/MapView'
 import './App.css'
 import NotFound from './components/NotFound'
 import LoggedIn from './components/LoggedIn'
@@ -26,7 +27,7 @@ const router = createBrowserRouter(
         <Route path="/help/faq" element={<FAQ />}></Route>
       </Route>
 
-
+      <Route path="/map" element={<MapView />}></Route>
       <Route path="/loggedin" element={<LoggedIn />}></Route>
 
       {/* error path for when a directory does not exist */}
