@@ -26,7 +26,7 @@
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
-    color: white;
+    color: gray;
 }
 
 .navbar a.active {
@@ -36,12 +36,8 @@
 
 }
 
-.logo {
-    color: black;
-}
-
-.setting {
-    display: auto;
-    margin-left: auto;
-    color: red;
+#settings-icon {
+    font-size: 30px;
+    /* might not be a good way to center the icon; this is meant to be used for inline elements and the NavLinks are block elements */
+    vertical-align: text-top;
 }
