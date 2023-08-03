@@ -3,11 +3,9 @@ body {
 
     height: 100%;
     width: 100%;
-
     /* background: linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -webkit-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1));
     background: -moz-linear-gradient(to top, rgba(43, 64, 48, 1), rgba(108, 189, 129, 1)); */
-
     background-repeat: no-repeat;
     margin: auto;
     /* padding: 10px; */
@@ -74,9 +72,6 @@ main {
     margin-top: 5%;
     width: 60%;
     height: 15%;
-
-
-
 }
 
 .login {

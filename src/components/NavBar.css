@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 10%;
-    display: block;
+    display: flex;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
@@ -11,6 +11,7 @@
     font-family: Montserrat;
     background-color: #25a9f5;
     padding: 15px 0px 15px 0px;
+    justify-content: right;
 }
 
 .navbar a {
@@ -34,6 +35,11 @@
     text-decoration: none;
     background-color: darkgoldenrod;
 
+}
+
+#logo {
+    margin-right: auto;
+    color: black;
 }
 
 #settings-icon {

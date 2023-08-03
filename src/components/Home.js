@@ -10,8 +10,9 @@ const Home = () => {
                 <input class="info" type="text" name="username" placeholder="Enter Username" required></input>
                 <input class="info" type="text" name="password" placeholder="Enter Password" required></input>
                 <button class="login" type="submit">Login</button>
-                {/* if an action did occur and it is an error, display the error message */}
-                {data && data.error && <p>{data.error}</p>}
+                {/* if an action did occur and it is an error, display the error message */}    
+                {/* FIX THIS: OVERLAPS WITH LOGIN BUTTON */}
+                {data && data.error && <p id="logged-in-error">{data.error}</p>}
             </Form>
 
         </>)
