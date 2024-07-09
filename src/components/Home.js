@@ -1,15 +1,19 @@
-import { Form, redirect, useActionData } from "react-router-dom"
-
+import { Form, redirect, useActionData, useNavigate } from "react-router-dom"
+import LoggedIn from './LoggedIn'
 const Home = () => {
     //action data related to blankAction function
     const data = useActionData();
+    const navigate = useNavigate();
 
+    const handleClick = () => {
+      navigate(LoggedIn);
+    };
     return (
         <>
             <Form class="login-form" method="post" action="/">
                 <input class="info" type="text" name="username" placeholder="Enter Username" required></input>
                 <input class="info" type="text" name="password" placeholder="Enter Password" required></input>
-                <button class="login" type="submit">Login</button>
+                <button onClick={handleClick} class="login" type="submit">Login</button>
                 {/* if an action did occur and it is an error, display the error message */}    
                 {/* FIX THIS: OVERLAPS WITH LOGIN BUTTON */}
                 {data && data.error && <p id="logged-in-error">{data.error}</p>}
@@ -37,9 +41,7 @@ export const loggedInAction = async ({ request }) => {
     // send post request
 
 
-    if (submission.username === "fei") {
-        return { error: 'No account exists with that username' }
-    }
+    
 
     // redirect the user
     return redirect('/loggedin')
